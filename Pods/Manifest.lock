@@ -1,0 +1,32 @@
+PODS:
+  - EmptyDataSet-Swift (4.2.0)
+  - FlagKit (2.2)
+  - Kingfisher (5.6.0)
+  - SwipeableTabBarController (2.1.1)
+  - ViewAnimator (2.5.1)
+
+DEPENDENCIES:
+  - EmptyDataSet-Swift (~> 4.2.0)
+  - FlagKit
+  - Kingfisher (~> 5.0)
+  - SwipeableTabBarController
+  - ViewAnimator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EmptyDataSet-Swift
+    - FlagKit
+    - Kingfisher
+    - SwipeableTabBarController
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  EmptyDataSet-Swift: 1fa0b35f530a35f852ecb2b53564728b0c300aaf
+  FlagKit: eca7dc89064b0c986302ba9acefad1bf80a435b1
+  Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
+  SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
+  ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
+
+PODFILE CHECKSUM: 2929452b057df56c6603bc8e2528abf2b439355c
+
+COCOAPODS: 1.6.2

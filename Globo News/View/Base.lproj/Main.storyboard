@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mY5-Cn-8oV">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="nMJ-qs-kEU">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="oqp-3d-3wp" customClass="TabBarViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="DYa-ai-c42">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HcF-fp-4WS" kind="relationship" relationship="viewControllers" id="FwJ-VH-zy0"/>
+                        <segue destination="QII-cb-Fyh" kind="relationship" relationship="viewControllers" id="mDT-NM-Ez7"/>
+                        <segue destination="Ykp-d6-ZOn" kind="relationship" relationship="viewControllers" id="9Mb-XP-TQS"/>
+                        <segue destination="wzI-ih-P9K" kind="relationship" relationship="viewControllers" id="DaQ-6C-kbN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5d-FC-C0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1494" y="554"/>
+        </scene>
+        <!--Headlines-->
+        <scene sceneID="ohT-zo-MMJ">
+            <objects>
+                <navigationController id="HcF-fp-4WS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Headlines" image="HeadlinesIcon" landscapeImage="HeadlinesIcon" selectedImage="HeadlinesIcon" id="7vK-WB-Dz4">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UWa-mr-b5w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0aQ-Id-kjh" kind="relationship" relationship="rootViewController" id="Wu9-kZ-f6q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flt-Vu-x2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-368"/>
+        </scene>
+        <!--Global-->
+        <scene sceneID="cfD-x1-pmk">
+            <objects>
+                <navigationController id="QII-cb-Fyh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Global" image="Globe" landscapeImage="Globe" selectedImage="Globe" id="Zk9-5m-VeG">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sPY-jN-O14">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WGb-tf-6ji" kind="relationship" relationship="rootViewController" id="n1p-YH-fti"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvN-o0-oQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="339"/>
+        </scene>
+        <!--Countries-->
+        <scene sceneID="PJm-gN-lDe">
+            <objects>
+                <navigationController id="wzI-ih-P9K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Countries" image="CountriesIcon" landscapeImage="CountriesIcon" selectedImage="CountriesIcon" id="C3W-he-0kQ">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DAf-ps-Khx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZGo-n7-9Sy" kind="relationship" relationship="rootViewController" id="1Ar-qb-lJA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45f-KI-tF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="1724"/>
+        </scene>
+        <!--Countries-->
+        <scene sceneID="6eE-LV-vb6">
+            <objects>
+                <viewController id="ZGo-n7-9Sy" customClass="CountriesViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vy1-pe-lJY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-IC-D1B">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" textLabel="eMe-ST-nQB" style="IBUITableViewCellStyleDefault" id="asv-Jf-OU9">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="asv-Jf-OU9" id="ZdZ-Tv-4Xb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eMe-ST-nQB">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZGo-n7-9Sy" id="ugG-h4-1jP"/>
+                                    <outlet property="delegate" destination="ZGo-n7-9Sy" id="ZNv-U9-Iyc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mgc-IC-D1B" firstAttribute="leading" secondItem="Spl-sx-vBN" secondAttribute="leading" id="BW9-xS-R4C"/>
+                            <constraint firstAttribute="bottom" secondItem="mgc-IC-D1B" secondAttribute="bottom" id="V16-PW-muW"/>
+                            <constraint firstItem="mgc-IC-D1B" firstAttribute="top" secondItem="vy1-pe-lJY" secondAttribute="top" constant="44" id="YbN-9H-VaW"/>
+                            <constraint firstAttribute="trailing" secondItem="mgc-IC-D1B" secondAttribute="trailing" id="lig-2m-Js1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Spl-sx-vBN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Countries" id="cLw-OE-zEP"/>
+                    <connections>
+                        <outlet property="tableView" destination="mgc-IC-D1B" id="6qp-Or-OVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYJ-te-YcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799.20000000000005" y="1723.152709359606"/>
+        </scene>
+        <!--Country Selection View Controller-->
+        <scene sceneID="AcH-Vt-oDc">
+            <objects>
+                <viewController storyboardIdentifier="CountrySelectionController" id="mY5-Cn-8oV" customClass="CountrySelectionViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLX-6v-nqo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="iwL-BN-cQj">
+                                <rect key="frame" x="0.0" y="94" width="414" height="751"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Globo News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVZ-pS-bAa">
+                                        <rect key="frame" x="79.5" y="0.0" width="255" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRr-5V-CpX" userLabel="Choose your countries">
+                                        <rect key="frame" x="112" y="33.5" width="190" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VB7-4H-Bgo">
+                                        <rect key="frame" x="20" y="62.5" width="374" height="632.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="i40-eQ-L7Q">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i40-eQ-L7Q" id="bBT-Oc-tZk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="mY5-Cn-8oV" id="vy1-hf-rnR"/>
+                                            <outlet property="delegate" destination="mY5-Cn-8oV" id="XaE-V7-0UR"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsf-VV-KXE">
+                                        <rect key="frame" x="142" y="701" width="130" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TcW-6u-Eqz"/>
+                                            <constraint firstAttribute="width" constant="130" id="xvc-R4-z9H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Get Started">
+                                            <color key="titleColor" red="0.2554603815" green="0.64152038099999997" blue="0.86923331020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DoneSelection:" destination="mY5-Cn-8oV" eventType="touchUpInside" id="pUx-k7-bzQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VB7-4H-Bgo" firstAttribute="top" secondItem="pRr-5V-CpX" secondAttribute="bottom" constant="6" id="Vmf-FQ-Zam"/>
+                                    <constraint firstAttribute="trailing" secondItem="VB7-4H-Bgo" secondAttribute="trailing" constant="20" id="rVI-HD-G0F"/>
+                                    <constraint firstItem="VB7-4H-Bgo" firstAttribute="leading" secondItem="iwL-BN-cQj" secondAttribute="leading" constant="20" id="w0N-Rt-uee"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iwL-BN-cQj" firstAttribute="top" secondItem="vhh-MO-GvY" secondAttribute="top" constant="50" id="3Ba-Dg-3x1"/>
+                            <constraint firstItem="vhh-MO-GvY" firstAttribute="bottom" secondItem="iwL-BN-cQj" secondAttribute="bottom" constant="17" id="Z7p-wD-05R"/>
+                            <constraint firstItem="iwL-BN-cQj" firstAttribute="leading" secondItem="vhh-MO-GvY" secondAttribute="leading" id="eCi-aX-Scs"/>
+                            <constraint firstItem="iwL-BN-cQj" firstAttribute="trailing" secondItem="vhh-MO-GvY" secondAttribute="trailing" id="yRQ-dj-Zcq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vhh-MO-GvY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countrySelectionButton" destination="Wsf-VV-KXE" id="Dxi-QA-Dxy"/>
+                        <outlet property="tableView" destination="VB7-4H-Bgo" id="gZL-e1-JO4"/>
+                        <outlet property="welcomeLabel" destination="WVZ-pS-bAa" id="tVr-lf-p9q"/>
+                        <segue destination="oqp-3d-3wp" kind="show" identifier="GetStarted" id="8wa-lV-yS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58A-kU-MVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2626.0869565217395" y="553.79464285714278"/>
+        </scene>
+        <!--Headlines-->
+        <scene sceneID="3xh-OD-9uT">
+            <objects>
+                <viewController id="0aQ-Id-kjh" customClass="HeadlinesViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQJ-86-Wb4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ATp-zS-DJT">
+                                <rect key="frame" x="0.0" y="63" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jHL-rp-TP4">
+                                    <size key="itemSize" width="370" height="350"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="20" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="cQz-AN-5xS">
+                                    <rect key="frame" x="0.0" y="-25" width="414" height="769"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="aKR-b2-V3i" customClass="NewsCell" customModule="Globo_News" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="20" width="370" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qzz-tY-ByX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18a-fq-V4E">
+                                                    <rect key="frame" x="20" y="233" width="350" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time | Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpF-0f-POZ">
+                                                    <rect key="frame" x="20" y="303" width="245" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGg-9U-KUv">
+                                                    <rect key="frame" x="316" y="303" width="34" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="share"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="370" height="350"/>
+                                        <connections>
+                                            <outlet property="newsDescription" destination="18a-fq-V4E" id="E1u-O9-Lih"/>
+                                            <outlet property="newsImage" destination="Qzz-tY-ByX" id="qL0-XC-vVj"/>
+                                            <outlet property="newsInfoLabel" destination="qpF-0f-POZ" id="jxb-rg-Ztq"/>
+                                            <outlet property="newsShareButton" destination="jGg-9U-KUv" id="KhX-ck-ouF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="0aQ-Id-kjh" id="o6w-WM-mi9"/>
+                                    <outlet property="delegate" destination="0aQ-Id-kjh" id="8i8-eF-1am"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ATp-zS-DJT" firstAttribute="leading" secondItem="YUb-XF-kTq" secondAttribute="leading" id="0dy-AN-aEA"/>
+                            <constraint firstAttribute="bottom" secondItem="ATp-zS-DJT" secondAttribute="bottom" constant="64" id="7tg-N0-RoI"/>
+                            <constraint firstItem="ATp-zS-DJT" firstAttribute="top" secondItem="sQJ-86-Wb4" secondAttribute="top" constant="63" id="dCm-TX-JbC"/>
+                            <constraint firstItem="ATp-zS-DJT" firstAttribute="trailing" secondItem="YUb-XF-kTq" secondAttribute="trailing" id="uMv-Z7-Pfl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YUb-XF-kTq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Headlines" id="3Rc-hY-vIZ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="cQz-AN-5xS" id="Xjz-FO-aqM"/>
+                        <outlet property="collectionView" destination="ATp-zS-DJT" id="a7A-gr-ZS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrw-e1-FIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="-352"/>
+        </scene>
+        <!--News Search-->
+        <scene sceneID="BqR-YD-Hme">
+            <objects>
+                <navigationController id="Ykp-d6-ZOn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News Search" image="NewsSearchIcon" landscapeImage="HeadlinesIcon" selectedImage="NewsSearchIcon" id="FpX-N0-c7a">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RFR-KN-fiE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CJ7-tT-7g0" kind="relationship" relationship="rootViewController" id="gFj-UX-51J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9D-4d-JJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="1045"/>
+        </scene>
+        <!--Global-->
+        <scene sceneID="2hv-eZ-ciu">
+            <objects>
+                <viewController id="WGb-tf-6ji" customClass="CategoriesViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwc-ZA-gSY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vrg-HU-UAs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TZd-3y-afX">
+                                    <size key="itemSize" width="370" height="270"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="20" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="aiK-1z-K17" userLabel="CategoryCell" customClass="NewsCell" customModule="Globo_News" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="20" width="370" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tF-bm-Kui">
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="210"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgz-i4-usb">
+                                                    <rect key="frame" x="20" y="208" width="350" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="370" height="270"/>
+                                        <connections>
+                                            <outlet property="newsDescription" destination="Hgz-i4-usb" id="vh0-om-I8A"/>
+                                            <outlet property="newsImage" destination="8tF-bm-Kui" id="Cdd-ZR-sPy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="WGb-tf-6ji" id="LLA-Rq-sSB"/>
+                                    <outlet property="delegate" destination="WGb-tf-6ji" id="OXa-yc-sXZ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vrg-HU-UAs" firstAttribute="top" secondItem="dwc-ZA-gSY" secondAttribute="top" constant="44" id="1Is-pp-skS"/>
+                            <constraint firstItem="Vrg-HU-UAs" firstAttribute="bottom" secondItem="rWi-uf-xWO" secondAttribute="bottom" id="3mn-St-REA"/>
+                            <constraint firstItem="Vrg-HU-UAs" firstAttribute="leading" secondItem="rWi-uf-xWO" secondAttribute="leading" id="ZDz-r1-cWc"/>
+                            <constraint firstItem="Vrg-HU-UAs" firstAttribute="trailing" secondItem="rWi-uf-xWO" secondAttribute="trailing" id="jXo-Nk-JxI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rWi-uf-xWO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Global" id="7dM-Xt-cKv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Vrg-HU-UAs" id="LHW-N6-uL1"/>
+                        <segue destination="0aQ-Id-kjh" kind="show" identifier="CategorySegue" id="DnQ-bW-vNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whV-Oc-i2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="338.16964285714283"/>
+        </scene>
+        <!--News Search-->
+        <scene sceneID="zUc-Un-qdi">
+            <objects>
+                <viewController id="CJ7-tT-7g0" customClass="SearchViewController" customModule="Globo_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sRw-qm-1dY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SSC-qt-TGw">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pRi-bo-GuU">
+                                    <size key="itemSize" width="370" height="350"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="20" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" id="8kU-oY-UnD">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="669"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="LWg-Fs-Hlx" customClass="NewsCell" customModule="Globo_News" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="20" width="370" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpD-So-tzJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="232"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-Al-FI0">
+                                                    <rect key="frame" x="20" y="233" width="350" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time | Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHf-QD-ev7">
+                                                    <rect key="frame" x="20" y="303" width="245" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-55-iBg">
+                                                    <rect key="frame" x="316" y="302" width="34" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="share"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="370" height="350"/>
+                                        <connections>
+                                            <outlet property="newsDescription" destination="uNv-Al-FI0" id="HEl-N8-nqu"/>
+                                            <outlet property="newsImage" destination="cpD-So-tzJ" id="C9a-2d-ved"/>
+                                            <outlet property="newsInfoLabel" destination="fHf-QD-ev7" id="ZTr-nP-LnU"/>
+                                            <outlet property="newsShareButton" destination="Iv2-55-iBg" id="rYN-Lp-Fi9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="CJ7-tT-7g0" id="Q9g-Di-qqX"/>
+                                    <outlet property="delegate" destination="CJ7-tT-7g0" id="sXh-me-bpG"/>
+                                </connections>
+                            </collectionView>
+                            <searchBar contentMode="redraw" placeholder="Search Keyword..." translatesAutoresizingMaskIntoConstraints="NO" id="NGS-tP-qBX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="CJ7-tT-7g0" id="PC9-SD-THR"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NGS-tP-qBX" firstAttribute="leading" secondItem="2Xk-PO-Z8f" secondAttribute="leading" id="4Yb-0P-QQK"/>
+                            <constraint firstItem="NGS-tP-qBX" firstAttribute="trailing" secondItem="2Xk-PO-Z8f" secondAttribute="trailing" id="4uX-oJ-PBq"/>
+                            <constraint firstItem="SSC-qt-TGw" firstAttribute="top" secondItem="NGS-tP-qBX" secondAttribute="bottom" id="Kfp-Nf-0aS"/>
+                            <constraint firstItem="SSC-qt-TGw" firstAttribute="top" secondItem="NGS-tP-qBX" secondAttribute="bottom" id="Kpj-Wq-Jen"/>
+                            <constraint firstItem="NGS-tP-qBX" firstAttribute="top" secondItem="2Xk-PO-Z8f" secondAttribute="top" id="UKu-yy-dFp"/>
+                            <constraint firstItem="SSC-qt-TGw" firstAttribute="bottom" secondItem="2Xk-PO-Z8f" secondAttribute="bottom" id="f1k-MH-Z6L"/>
+                            <constraint firstItem="SSC-qt-TGw" firstAttribute="trailing" secondItem="2Xk-PO-Z8f" secondAttribute="trailing" id="tgX-WE-ec8"/>
+                            <constraint firstItem="SSC-qt-TGw" firstAttribute="leading" secondItem="2Xk-PO-Z8f" secondAttribute="leading" id="vgL-i2-2Ub"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Xk-PO-Z8f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News Search" id="OLr-Fy-SeP"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="8kU-oY-UnD" id="RmX-Tg-Bf5"/>
+                        <outlet property="collectionView" destination="SSC-qt-TGw" id="E4g-c7-Qxw"/>
+                        <outlet property="searchBar" destination="NGS-tP-qBX" id="6Ru-Gk-tJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljH-CB-KGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="1043.9732142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CountriesIcon" width="25" height="25"/>
+        <image name="Globe" width="25" height="25"/>
+        <image name="HeadlinesIcon" width="25" height="25"/>
+        <image name="NewsSearchIcon" width="25" height="25"/>
+        <image name="share" width="25" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DnQ-bW-vNo"/>
+    </inferredMetricsTieBreakers>
+</document>
