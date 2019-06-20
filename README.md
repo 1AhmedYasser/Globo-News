@@ -41,6 +41,9 @@
 ## Screen Shots
 
 ![Headlines Screenshot](https://github.com/1AhmedYasser/Globo-News/blob/master/ScreenShots/HeadlinesScreenShot.png)
+![Global Screenshot](https://github.com/1AhmedYasser/Globo-News/blob/master/ScreenShots/Global%20ScreenShot.png)
+![News search Screenshot](https://github.com/1AhmedYasser/Globo-News/blob/master/ScreenShots/News%20Search%20ScreenShot.png)
+![Countries Screenshot](https://github.com/1AhmedYasser/Globo-News/blob/master/ScreenShots/Countries%20ScreenShot.png)
 ## Requirments
 
 * OS 10.0+
