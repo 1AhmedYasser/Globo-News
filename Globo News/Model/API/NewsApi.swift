@@ -52,7 +52,6 @@ class NewsApi {
         NewsInfo.countryName = countryName[0]
         NewsInfo.categoryName = categoryName
         let newsUrl = (categoryName.isEmpty) ? Endpoints.getCountryHeadline.url : Endpoints.getCategoryHeadline.url
-        print(newsUrl)
         _ = newsGetRequest(countryName: countryName, url: newsUrl, responseType: NewsResponse.self, completion: {(response,errorMessage,statusCode,error) in
             
             if let response = response {
