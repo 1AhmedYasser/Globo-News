@@ -40,6 +40,7 @@
 
 ## Screen Shots
 
+![Headlines Screenshot](https://github.com/1AhmedYasser/Globo-News/blob/master/ScreenShots/HeadlinesScreenShot.png)
 ## Requirments
 
 * OS 10.0+
