@@ -13,6 +13,8 @@ class CategoriesViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
     // Categories titles and images arrays
     let categoryTitles = ["Business", "Entertainment", "Health","Science","Sports","Technology"]
     let categoryImages = [UIImage(named: "Business"), UIImage(named: "Entertainment"), UIImage(named: "Health"), UIImage(named: "Science"),UIImage(named: "Sports"),UIImage(named: "Technology")]

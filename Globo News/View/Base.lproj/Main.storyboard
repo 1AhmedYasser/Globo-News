@@ -315,6 +315,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="cQz-AN-5xS" id="Xjz-FO-aqM"/>
                         <outlet property="collectionView" destination="ATp-zS-DJT" id="a7A-gr-ZS1"/>
+                        <outlet property="flowLayout" destination="jHL-rp-TP4" id="84v-hW-2sE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrw-e1-FIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -406,6 +407,7 @@
                     <navigationItem key="navigationItem" title="Global" id="7dM-Xt-cKv"/>
                     <connections>
                         <outlet property="collectionView" destination="Vrg-HU-UAs" id="LHW-N6-uL1"/>
+                        <outlet property="flowLayout" destination="TZd-3y-afX" id="It8-Mi-KpW"/>
                         <segue destination="0aQ-Id-kjh" kind="show" identifier="CategorySegue" id="DnQ-bW-vNo"/>
                     </connections>
                 </viewController>
@@ -511,6 +513,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="8kU-oY-UnD" id="RmX-Tg-Bf5"/>
                         <outlet property="collectionView" destination="SSC-qt-TGw" id="E4g-c7-Qxw"/>
+                        <outlet property="flowLayout" destination="pRi-bo-GuU" id="tWQ-RT-LK8"/>
                         <outlet property="searchBar" destination="NGS-tP-qBX" id="6Ru-Gk-tJv"/>
                     </connections>
                 </viewController>

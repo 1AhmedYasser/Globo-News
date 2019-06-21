@@ -16,6 +16,7 @@ class SearchViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     // pull refresh control
     var refreshControl = UIRefreshControl()

@@ -16,6 +16,7 @@ class HeadlinesViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     // Given News Category
     var category = ""
