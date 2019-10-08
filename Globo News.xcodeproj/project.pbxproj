@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9414334222B7165100D85FE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9414334122B7165100D85FE2 /* Images.xcassets */; };
 		94154A9822AC1C84006FECF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94154A9722AC1C84006FECF8 /* AppDelegate.swift */; };
 		94154A9D22AC1C84006FECF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94154A9B22AC1C84006FECF8 /* Main.storyboard */; };
 		94154A9F22AC1C86006FECF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94154A9E22AC1C86006FECF8 /* Assets.xcassets */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		2CBE9EFFDBC10DC2055C64E0 /* Pods_Globo_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Globo_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C18AADB76B062B467D78F0 /* Pods-Globo News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Globo News.release.xcconfig"; path = "Target Support Files/Pods-Globo News/Pods-Globo News.release.xcconfig"; sourceTree = "<group>"; };
-		9414334122B7165100D85FE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		94154A9422AC1C84006FECF8 /* Globo News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Globo News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94154A9722AC1C84006FECF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94154A9C22AC1C84006FECF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				94154A9B22AC1C84006FECF8 /* Main.storyboard */,
 				94154A9E22AC1C86006FECF8 /* Assets.xcassets */,
 				94154AA022AC1C86006FECF8 /* LaunchScreen.storyboard */,
-				9414334122B7165100D85FE2 /* Images.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94154AA222AC1C86006FECF8 /* LaunchScreen.storyboard in Resources */,
-				9414334222B7165100D85FE2 /* Images.xcassets in Resources */,
 				94154A9F22AC1C86006FECF8 /* Assets.xcassets in Resources */,
 				94154A9D22AC1C84006FECF8 /* Main.storyboard in Resources */,
 			);
@@ -494,13 +490,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CN8D7T7K57;
+				DEVELOPMENT_TEAM = GT2L62MLF3;
 				INFOPLIST_FILE = "Globo News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Ahmedyasser.Globo-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedyasser.GloboNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,13 +510,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CN8D7T7K57;
+				DEVELOPMENT_TEAM = GT2L62MLF3;
 				INFOPLIST_FILE = "Globo News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Ahmedyasser.Globo-News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedyasser.GloboNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

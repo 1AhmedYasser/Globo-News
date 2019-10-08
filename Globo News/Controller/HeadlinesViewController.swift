@@ -74,7 +74,7 @@ class HeadlinesViewController: UIViewController {
         
         navigationItem.rightBarButtonItem!.isEnabled = true
         activityIndicator.stopAnimating()
-        
+       
         for article in articles {
             if article.urlToImage != nil {
                 self.articles.append(article)
@@ -193,14 +193,22 @@ extension HeadlinesViewController :  UICollectionViewDataSource {
     
     // Handle opening the news article url
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let articleUrl = URL(string: articles[indexPath.row].url)
-        
+        var articleUrl = URL(string: articles[indexPath.row].url)
         if let articleUrl = articleUrl {
-            if UIApplication.shared.canOpenURL(articleUrl) {
-                UIApplication.shared.open(articleUrl, options: [:], completionHandler: nil)
-            } else {
-                showError(controller: self, title: "Error", message: "Can't Open url")
-            }
+           openUrl(articleUrl)
+        } else {
+           articleUrl = URL(string: articles[indexPath.row].url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
+           guard let articleUrl = articleUrl else { return }
+           openUrl(articleUrl)
+        }
+    }
+    
+    // Helper method to open Urls
+    func openUrl(_ url: URL) {
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            showError(controller: self, title: "Error", message: "Can't Open url")
         }
     }
 }
