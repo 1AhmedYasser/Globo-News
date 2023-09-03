@@ -294,24 +294,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Globo News/Pods-Globo News-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
-				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Globo News/Pods-Globo News-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Globo News/Pods-Globo News-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

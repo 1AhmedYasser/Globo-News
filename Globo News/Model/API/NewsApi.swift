@@ -13,7 +13,7 @@ import UIKit
 class NewsApi {
     
     // Static api key
-    static let apiKey = "672e322a33e044cebd77cb35a8fdebff"
+    static let apiKey = "a35270275f604c13b28ff7d5092e3e30"
     
     // Struct that contains News info and can be used throughout the app
     struct NewsInfo {
@@ -97,6 +97,8 @@ class NewsApi {
                 let decoder = JSONDecoder()
                 do {
                     let responseObject = try decoder.decode(ResponseType.self, from: data!)
+                    print(String(data: data!, encoding: String.Encoding.utf8))
+//                    print(responseObject)
                     DispatchQueue.main.async {
                         completion(responseObject,"",httpStatusCode,nil)
                     }

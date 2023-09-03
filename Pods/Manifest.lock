@@ -13,7 +13,7 @@ DEPENDENCIES:
   - ViewAnimator
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - EmptyDataSet-Swift
     - FlagKit
     - Kingfisher
@@ -27,6 +27,6 @@ SPEC CHECKSUMS:
   SwipeableTabBarController: 8f7f04275f510c5babb630f7be1161b5f28567e0
   ViewAnimator: 173932c659a43c5a15c665878750d92801ae2cf1
 
-PODFILE CHECKSUM: 2929452b057df56c6603bc8e2528abf2b439355c
+PODFILE CHECKSUM: 9f79576fa73ef1342013c5b903141470068decb9
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.12.1
